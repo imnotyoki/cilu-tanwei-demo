@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <title>词律探微 · 清词声情研究助手</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="词律探微首页">
+        <span class="brand-mark">詞</span>
+        <span><b>词律探微</b><small>清词声情研究助手</small></span>
+      </a>
+      <div class="nav-label">研究工作台</div>
+      <nav id="nav">
+        <button class="nav-item active" data-view="home"><span>⌂</span>研究概览</button>
+        <button class="nav-item" data-view="meter"><span>◌</span>声律解析</button>
+        <button class="nav-item" data-view="ask"><span>✳</span>声情问答</button>
+        <button class="nav-item" data-view="argument"><span>▤</span>论证辅助</button>
+        <button class="nav-item" data-view="review"><span>↺</span>校订建议 <i id="queue-count">3</i></button>
+        <button class="nav-item" data-view="graph"><span>⌘</span>知识图谱</button>
+        <button class="nav-item" data-view="bank"><span>▦</span>题库检索 <i class="nav-count">1000</i></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="dataset-chip"><span class="pulse"></span><span><b>题库已载入</b><small>V5 · 公开 + 验证集</small></span></div>
+        <div class="user-chip"><div class="avatar">研</div><span><b>研究者工作区</b><small>本地原型</small></span><span class="dots">···</span></div>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div class="crumb"><span>词律探微</span><span class="slash">/</span><b id="crumb-title">研究概览</b></div>
+        <div class="top-actions"><span class="prototype-pill"><span class="pulse"></span>原型演示</span><button class="icon-button" title="帮助">?</button><div class="avatar small">研</div></div>
+      </header>
+      <div id="app" class="content"></div>
+      <footer>词律探微 <span>·</span> 人文筑基，智能向善 <span class="footer-right">研究结果需结合词学文献与专家判断</span></footer>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="benchmark.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
